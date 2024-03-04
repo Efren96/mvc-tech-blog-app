@@ -38,4 +38,4 @@ Post.init(
         modelName: 'post',
     }
 );
-module.exports = User;
+module.exports = Post;
