@@ -78,7 +78,7 @@ router.post('/', async (req, res) => {
 
 // logs user in
   router.post('/login', async (req, res) => {
-  User.findOne({ where: { username: req.body.username } 
+  User.findOne({ where: { email: req.body.email } 
   }).then(dbUserData => {
     if (!dbUserData) {
       res
